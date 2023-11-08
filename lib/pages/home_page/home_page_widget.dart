@@ -273,12 +273,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             borderWidth: 1.0,
             buttonSize: 60.0,
             icon: const Icon(
-              Icons.arrow_back_rounded,
+              Icons.menu,
               color: Colors.white,
               size: 30.0,
             ),
             onPressed: () async {
-              context.pop();
+              scaffoldKey.currentState!.openDrawer();
             },
           ),
           title: Align(
